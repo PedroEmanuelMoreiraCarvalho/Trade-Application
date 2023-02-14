@@ -1,17 +1,15 @@
 import { getQuote } from "../services/exchange";
 
 class User {
-    id: number;
+    _id?: string;
     cash: {
         [BRL: string]: number,
         USD: number
-    }
-    constructor(id: number){
-        this.id = id,
-        this.cash = {
-            BRL: 300,
-            USD: 100
-        }
+    };
+
+    constructor(obj: any){
+        this._id = obj?._id;
+        this.cash = obj.cash;
     }
 
     getCash(coin: string): number{

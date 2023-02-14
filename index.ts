@@ -6,7 +6,3 @@ import { User } from './src/user_controller/user';
 
 Start();
 ConnectDatabase();
-
-let user = new User(1);
-user.exchange(5099,"BRL","USD");
-export { user }
