@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { ObjectId } from "mongodb";
 import { UserModel } from "../models/user_model";    
 import { User } from "./user";
 
@@ -79,4 +78,4 @@ const UserFunctions = {
     }
 };
 
-export { UserFunctions };
+export { UserFunctions, getUser };

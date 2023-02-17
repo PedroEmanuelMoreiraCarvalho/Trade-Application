@@ -4,9 +4,6 @@ dotenv.config();
 
 const API_KEY = process.env.API_KEY;
 
-var BRl_cash: number = 3000;
-var USD_cash: number = 0;
-
 async function getQuote(from_symbol: string, to_symbol: string): Promise<any>{
     const options = {
         method: 'GET',
